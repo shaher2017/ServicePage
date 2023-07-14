@@ -1,0 +1,264 @@
+body{
+    margin: 0;
+}
+.container{
+    min-height: fit-content;
+    width: 100vw;
+}
+/*               Nav Bar Configurations           */
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+}
+.logo{
+    display: flex;
+    margin-left: 5rem;
+    font-size: 22px;
+    font-weight: 700;
+    color: orange;
+}
+
+i{
+    color: orange;
+    margin-top: 10px;
+}
+.navitems{
+    display: flex;
+    
+    align-items: center;
+}
+.navitems a{
+    text-decoration: none;
+    margin-right: 5rem;
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+}
+.navitems i{
+    color: black;
+}
+.cart i{
+    margin: 0;
+}
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin-left: 1rem;
+    }
+    .navitems a {
+        margin: 0 ;
+        font-size: 12px;
+    }
+    .navitems{justify-content: space-around;}
+    nav{display: block;}
+}
+
+/*               intro Configurations           */
+
+.intro{
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    color: white;
+}
+.intro img{
+    width: 100%;
+}
+.introwords{
+    position: absolute;
+    top: 7rem;
+    left: 12rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.intro h2{
+    font-size: 50px;
+    margin: 0;
+}
+.intro p{
+    font-size: 18px;
+}
+.intro button{
+    color: white;
+    background-color: orange;
+    box-sizing: border-box;
+    padding : 10px;
+    width: 15%;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 0;
+}
+@media only screen and (max-width: 600px) {
+   
+    .introwords{
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+    }
+    .intro h2{
+        font-size: 15px;
+        margin: 0;
+    }
+    .intro p{
+        font-size: 10px;
+    }
+    .intro button{
+        box-sizing: border-box;
+        font-size: 10px;
+        padding : 5px;
+        width: 30%;
+        border-radius: 5px;
+        border: 0;
+    }
+}
+
+/*                Cards Show                  */
+.productsshow{
+    color: #a94e21;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.cards {
+    margin-left: 85px;
+    margin-right: 85px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+}
+
+.card{
+    width: 250px;
+    height: 380px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 0;
+    border: 1px solid rgb(77, 75, 75);
+}
+.card img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.description{
+    margin-left: 5%;
+    color: #a94e21;
+
+}
+s{
+    color: gray;
+}
+.description span{
+    color: black;
+}
+.quantity{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.quantity button{
+    width: 50%;
+    background-color: orange;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 0;
+}
+.quantity button p{
+    margin: 0;
+    color: white;
+}
+.quantity button i{
+    margin: 0;
+    color: white;
+}
+.quantity input{
+    width: 50%;
+}
+
+.unparalleldes{
+    display: block;
+    margin-left: 85px;
+    margin-right: 85px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.forimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servimg{
+    width: 400px; 
+  height: 300px; 
+  border-radius: 70%; 
+}
+/*     Footer    */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(231 225 225);
+    
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0;
+}
+li{
+    color: gray;
+}
+.col i{
+    color: black;
+    padding: 10px;
+}
+.footernews{
+    display: flex;
+}
+.col p{
+    color: gray;
+    margin: 0;
+}
+.subscribe form{
+    display: flex;
+    margin-top: 15px;
+    font-size: 18px;
+    
+}
+.subscribe form button{
+    background-color: orange;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    padding: 5px;
+    border: 0;
+}
+.subscribe form input{
+    width: 200px;
+    border-radius: 5px;
+    border: 0;
+}
+@media only screen and (max-width: 600px) {
+    .subscribe form input{
+        width: 150px;
+        margin-bottom: 3px;
+    }
+    .subscribe form{
+        flex-direction: column;
+    }
+}
